@@ -4,12 +4,6 @@ plugins {
     id 'maven-publish'
 }
 
-repositories {
-    mavenCentral()
-    google()
-    maven { url "https://jitpack.io" }
-}
-
 project.afterEvaluate {
     publishing {
         publications {
