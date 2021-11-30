@@ -1,0 +1,64 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'maven-publish'
+}
+
+repositories {
+    mavenCentral()
+    google()
+    maven { url "https://jitpack.io" }
+}
+
+project.afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from(components.release)
+                groupId = rootProject.libGroupId
+                artifactId = rootProject.libArtifactId
+                version = rootProject.libVersionName
+            }
+        }
+    }
+}
+
+task publishLibToMavenLocal(
+        dependsOn: [':app:publishReleasePublicationToMavenLocal'],
+        group: 'publish pratik open-libraries'
+)
+
+android {
+    compileSdk 30
+
+    defaultConfig {
+        minSdk 16
+        targetSdk 30
+        versionCode rootProject.libVersionCode
+        versionName rootProject.libVersionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_11
+    }
+}
+
+dependencies {
+    implementation 'androidx.core:core-ktx:1.6.0'
+}
