@@ -14,6 +14,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
+        maven { url "https://jitpack.io" }
     }
 }
 
@@ -24,6 +25,6 @@ task clean(type: Delete) {
 ext {
     libGroupId = 'com.github.pratik-saluja'
     libArtifactId = 'open-library'
-    libVersionCode = 1
-    libVersionName = '1.0'
+    libVersionCode = 2
+    libVersionName = '1.1'
 }
