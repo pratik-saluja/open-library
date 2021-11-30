@@ -143,6 +143,7 @@ Sign In to https://jitpack.io/
 
 Enter the ```tag``` and ```version number``` and ```publish the release```.
 
+![version](/assets/Screenshot%202021-11-30%20at%205.46.20%20PM.png)
 ![tag](/assets/Screenshot%202021-11-30%20at%205.46.29%20PM.png)
 
 #### Find and Check in JitPack
@@ -151,7 +152,7 @@ Open https://jitpack.io/ and enter the repo url and hit Look up
 
 ![jitpack](/assets/Screenshot%202021-11-30%20at%205.47.54%20PM.png)
 
-Notice the color. It can be either Red or Green. Red indicated build and upload error. Green indicated the library is successfully uploaded and published.
+Notice the color. It can be either Red or Green. Red indicates build and upload error. Green indicates the library is successfully uploaded and published.
 
 #### Access the library
 
