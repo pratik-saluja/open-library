@@ -154,7 +154,7 @@ Open https://jitpack.io/ and enter the repo url and hit Look up
 
 Notice the color. It can be either Red or Green. Red indicates build and upload error. Green indicates the library is successfully uploaded and published.
 
-#### Access the library
+#### How the world is going to access the library?
 
 [![](https://jitpack.io/v/pratik-saluja/open-library.svg)](https://jitpack.io/#pratik-saluja/open-library)
 
