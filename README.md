@@ -10,7 +10,7 @@ What is an Android library? It helps to include everything which is needed to bu
 1. **Public Library**: Public libraries are accessible by anyone on the internet without the need of any authentication process. 
 2. **Private Library**: Private libraries are only accessible by the individuals who are granted and authorized to access them. A good example can be an employee of an organization.
 
-### How to create a private library?
+### How to create a public library?
 
 Before jumping off directly on Android Studio let's cross-check and make sure the following tools are installed on the system:
 
@@ -186,6 +186,9 @@ jdk:
   - openjdk11
 ```
 
+---
+### Optional
+
 #### :bulb: Add GitHub Checks
 
 Add Workflow by creating task in ```.github/workflows/master.yml```
@@ -221,7 +224,5 @@ jobs:
 
 #### :bulb: Related useful links:
 - https://jitpack.io/docs/BUILDING/
-- https://medium.com/@ome450901/publish-an-android-library-by-jitpack-a0342684cbd0
-- https://github.com/jitpack/android-example
 - https://stackoverflow.com/questions/69021225/resource-linking-fails-on-lstar
 
